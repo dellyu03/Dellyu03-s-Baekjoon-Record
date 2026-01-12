@@ -1,9 +1,9 @@
-arr = []
-for i in range(10):
-    a = int(input())
-    if a%42 not in arr:
-        arr.append(a % 42)
-print(len(arr))
+lefts = []
 
-
-            
+for n in range (10):
+    i = int(input())
+    left = i%42
+    if left not in lefts:
+        lefts.append(left)
+        
+print(len(lefts))
