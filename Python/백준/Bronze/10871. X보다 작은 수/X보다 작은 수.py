@@ -1,11 +1,7 @@
 n, x = map(int, input().split())
-a = input().split()
-answer = []
+a = list(map(int, input().split()))
 
-for i in a:
-    i=int(i)
-    if i < x:
-        answer.append(i)
-        
-for i in answer:
-    print(i, sep =" ")
+result = [str(i) for i in a if i < x]
+
+print(" ".join(result))
+
